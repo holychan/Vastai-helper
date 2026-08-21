@@ -29,5 +29,5 @@ cd bin && export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH
   --props \
   --checkpoint-min-step 4096 --ctx-checkpoints 64 \
   --perf --metrics \
-  --host 0.0.0.0 --port 8000 \
+  --host 0.0.0.0 --port 18000 \
   --api-key sk-running-ai-model-opencode 
