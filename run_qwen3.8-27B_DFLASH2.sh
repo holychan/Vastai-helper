@@ -14,19 +14,18 @@ cd bin && export LD_LIBRARY_PATH=$(pwd):$LD_LIBRARY_PATH
   --spec-draft-p-min 0.6 \
   -ngl all \
   --spec-draft-ngl all \
-  --threads 8 \
-  --threads-batch 8 \
+  --threads 16 \
+  --threads-batch 16 \
   -c 262144 \
   --kv-unified \
   --jinja \
   --cache-type-k q4_0 --cache-type-v q4_0 \
-  -np 1 \
+  -np 1 -fa on \
   -b 2048 -ub 512 \
   --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.0 \
   --presence-penalty 0.0 --repeat-penalty 1.0 \
   --alias Qwen3.8-27B \
   --reasoning on --reasoning-preserve --reasoning-format deepseek --reasoning-budget 16000 \
-  --props \
   --checkpoint-min-step 4096 --ctx-checkpoints 64 \
   --perf --metrics \
   --host 0.0.0.0 --port 18000 \
