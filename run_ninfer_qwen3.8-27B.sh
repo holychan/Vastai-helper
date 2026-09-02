@@ -19,15 +19,6 @@ hf download neroued/Qwen3.8-27B-nvfp4-NInfer \
   qwen3_8_27b_nvfp4.ninfer \
   --local-dir models
 
-# ======= Install Speed-bench =======
-#cd /workspace
-#git clone --depth 1 --filter=blob:none --sparse https://github.com/ggml-org/llama.cpp.git
-#cd llama.cpp
-#git sparse-checkout set tools/server/bench/speed-bench
-#cd tools/server/bench/speed-bench/
-#pip install -r requirements.txt
-#python3 speed_bench.py   --url http://127.0.0.1:18000   --bench qualitative   --category all   --osl 128   --concurrency 1   --output rtx5090_qualitative_results.json --model Qwen3.8-27B
-
 ./build/apps/ninfer-serve models/qwen3_8_27b_nvfp4.ninfer \
   --max-context 240000 \
   --kv-capacity 240000 \
