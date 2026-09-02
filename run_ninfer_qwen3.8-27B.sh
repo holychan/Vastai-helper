@@ -7,6 +7,8 @@ cd /workspace
 git clone https://github.com/Neroued/ninfer.git
 cd ninfer
 
+apt-get update && apt-get install -y libavformat-dev libavcodec-dev libavutil-dev libswscale-dev
+
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 
