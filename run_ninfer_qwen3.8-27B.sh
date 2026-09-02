@@ -4,13 +4,16 @@ pip install toolong
 
 cd /workspace
 
-git clone https://github.com/Neroued/ninfer.git
+wget https://github.com/holychan/Vastai-helper/releases/download/ninfer/ninfer-binaries.tar.gz
+tar xzf /ninfer-binaries.tar.gz
+
+#git clone https://github.com/Neroued/ninfer.git
+
 cd ninfer
 
-apt-get update && apt-get install -y libavformat-dev libavcodec-dev libavutil-dev libswscale-dev
-
-cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
-cmake --build build -j
+#apt-get update && apt-get install -y libavformat-dev libavcodec-dev libavutil-dev libswscale-dev
+#cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
+#cmake --build build -j
 
 hf download neroued/Qwen3.8-27B-nvfp4-NInfer \
   qwen3_8_27b_nvfp4.ninfer \
