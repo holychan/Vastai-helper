@@ -25,7 +25,7 @@ hf download neroued/Qwen3.8-27B-nvfp4-NInfer \
   --host-state-slots 8 \
   --host-kv-mib 8192 \
   --spec mtp --draft-tokens 3 \
-  --lm-head-draft \  
+  --lm-head-draft \
   --preserve-thinking \
   --host 0.0.0.0 --port 18000 \
   --api-key sk-running-ai-model-opencode \
