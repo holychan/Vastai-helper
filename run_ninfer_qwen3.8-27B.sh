@@ -29,7 +29,7 @@ hf download neroued/Qwen3.8-27B-nvfp4-NInfer \
   --preserve-thinking \
   --host 0.0.0.0 --port 18000 \
   --api-key sk-running-ai-model-opencode \
-  --alias Qwen3.8-27B \
+  --model-id Qwen3.8-27B \
   --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0.0 \
   --presence-penalty 0.0 --repeat-penalty 1.0 \
   --preserve-thinking
