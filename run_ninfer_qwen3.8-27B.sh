@@ -5,7 +5,7 @@ pip install toolong
 cd /workspace
 
 wget https://github.com/holychan/Vastai-helper/releases/download/ninfer/ninfer-binaries.tar.gz
-tar xzf /ninfer-binaries.tar.gz
+tar xzf ninfer-binaries.tar.gz
 
 #git clone https://github.com/Neroued/ninfer.git
 
