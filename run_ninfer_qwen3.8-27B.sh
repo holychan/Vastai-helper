@@ -26,8 +26,7 @@ hf download neroued/Qwen3.8-27B-nvfp4-NInfer \
 #git sparse-checkout set tools/server/bench/speed-bench
 #cd tools/server/bench/speed-bench/
 #pip install -r requirements.txt
-#wget https://raw.githubusercontent.com/holychan/Vastai-helper/refs/heads/main/speed_bench.py
-#python3 speed_bench.py   --url http://127.0.0.1:18000   --bench qualitative   --category all   --osl 128   --concurrency 1   --output rtx5090_qualitative_results.json --api-key xxx --model Qwen3.8-27B
+#python3 speed_bench.py   --url http://127.0.0.1:18000   --bench qualitative   --category all   --osl 128   --concurrency 1   --output rtx5090_qualitative_results.json --model Qwen3.8-27B
 
 ./build/apps/ninfer-serve models/qwen3_8_27b_nvfp4.ninfer \
   --max-context 240000 \
