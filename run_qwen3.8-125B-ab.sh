@@ -4,7 +4,7 @@ pip install toolong
 cd /workspace
 
 # Clone Strata
-git clone https://github.com/Niko1221/Strata
+cd Strata || git clone https://github.com/Niko1221/Strata
 
 # Download Qwen3.8 Flash Next Coder abliterated
 hf download alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Coder-Strata-GGUF --local-dir coder
